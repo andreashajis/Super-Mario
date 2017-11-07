@@ -22,7 +22,7 @@ body {
 		function preload() {
 			//  We need this because the assets are on github pages
 			//  Remove the next 2 lines if running locally
-			this.load.baseURL = 'https://elisavetliana.github.io/Super-Mario/';
+			this.load.baseURL = 'https://andreashajis.github.io/Super-Mario/';
 			this.load.crossOrigin = 'anonymous';
 			
 			//Sounds
@@ -95,7 +95,7 @@ body {
 			coins.enableBody = true;
 			map.createFromTiles(2, null, 'coin', 'stuff', coins);
 			coins.callAll('animations.add', 'animations', 'spin',
-					[ 0, 0, 1, 2 ], 3, true);
+					[ 0, 1, 2,3,4,5,6,7 ], 3, true);
 			coins.callAll('animations.play', 'animations', 'spin');
 			goombas = game.add.group();
 			goombas.enableBody = true;
